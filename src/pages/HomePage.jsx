@@ -8,7 +8,6 @@ function App() {
       <nav className="navigation">
         <div className="logo">Octavi00</div>
         <div className="nav-links">
-          <a>Home</a>
           <a>Transfer</a>
           <a>About</a>
         </div>
@@ -17,7 +16,7 @@ function App() {
       <section className="hero-card">
         <p className="text-wrapper">Welcome to your favorite tools</p>
 
-        <p className="div">
+        <p className="hero-subtext">
           Switching music service? Try out the playlist transfer tool
         </p>
 
@@ -32,7 +31,7 @@ function App() {
         </div>
       </section>
 
-      <div className="rectangle">
+      <div className="transfer-preview">
         <div className="playlist-card spotify-card">
           <span>Spotify Playlist</span>
           <p>Liked Songs → Road Trip → Gym Mix</p>
@@ -46,7 +45,7 @@ function App() {
         </div>
       </div>
 
-      <div className="rectangle-2" />
+      <div className="background-glow" />
     </div>
   )
 }

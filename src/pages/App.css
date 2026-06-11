@@ -1,3 +1,4 @@
+/* GLOBAL / SHARED */
 .dashboard {
   min-height: 100vh;
   background: #101014;
@@ -8,16 +9,28 @@
   overflow: hidden;
 }
 
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* NAVIGATION */
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 90px;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 800;
 }
 
 .nav-links {
@@ -26,6 +39,10 @@
   color: #cfcfd8;
 }
 
+
+
+
+/* HOME PAGE - HERO */
 .hero-card {
   max-width: 760px;
   z-index: 2;
@@ -39,24 +56,19 @@
   margin: 0 0 24px;
 }
 
-.div {
+.hero-subtext {
   font-size: 24px;
   color: #cfcfd8;
   margin-bottom: 36px;
 }
 
+
+
+
+/* HOME PAGE - BUTTONS */
 .button-row {
   display: flex;
   gap: 16px;
-}
-
-button {
-  border: none;
-  border-radius: 999px;
-  padding: 16px 24px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
 }
 
 .spotify-btn {
@@ -69,7 +81,16 @@ button {
   color: black;
 }
 
-.rectangle {
+.home-btn {
+  background: rgb(13, 110, 128);
+  color: black;
+}
+
+
+
+
+/* HOME PAGE - PLAYLIST TRANSFER PREVIEW */
+.transfer-preview {
   margin-top: 80px;
   background: #1c1c24;
   border: 1px solid #333342;
@@ -100,7 +121,11 @@ button {
   font-size: 42px;
 }
 
-.rectangle-2 {
+
+
+
+/* BACKGROUND EFFECTS */
+.background-glow {
   position: absolute;
   width: 420px;
   height: 420px;
@@ -110,4 +135,135 @@ button {
   border-radius: 50%;
   filter: blur(90px);
   opacity: 0.35;
+}
+
+
+
+
+/* CONNECT SPOTIFY PAGE */
+.connect-page {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.connect-card {
+  background: #1c1c24;
+  border: 1px solid #333342;
+  border-radius: 32px;
+  padding: 48px;
+  max-width: 560px;
+}
+
+.connect-card h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.connect-label {
+  color: #1db954;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.connect-description {
+  color: #cfcfd8;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.spotify-connect-btn {
+  width: 100%;
+  background: #1db954;
+  color: #101014;
+}
+
+.connect-note {
+  color: #8f8fa3;
+  font-size: 14px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+
+
+
+/* CONNECT PAGE - STEPS PREVIEW */
+.connect-preview {
+  background: rgba(28, 28, 36, 0.7);
+  border: 1px solid #333342;
+  border-radius: 28px;
+  padding: 32px;
+  width: 360px;
+}
+
+.connect-preview h3 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #333342;
+}
+
+.step-row span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #292936;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.step-row p {
+  color: #cfcfd8;
+  margin: 0;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  .connect-page {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .connect-card,
+  .connect-preview {
+    width: auto;
+    max-width: none;
+  }
+
+  .connect-card h1 {
+    font-size: 38px;
+  }
+
+  .text-wrapper {
+    font-size: 44px;
+  }
+
+  .rectangle {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .arrow {
+    text-align: center;
+  }
 }
