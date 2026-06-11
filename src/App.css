@@ -1,0 +1,113 @@
+.dashboard {
+  min-height: 100vh;
+  background: #101014;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  color: #cfcfd8;
+}
+
+.hero-card {
+  max-width: 760px;
+  z-index: 2;
+  position: relative;
+}
+
+.text-wrapper {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+
+.div {
+  font-size: 24px;
+  color: #cfcfd8;
+  margin-bottom: 36px;
+}
+
+.button-row {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.spotify-btn {
+  background: #1db954;
+  color: black;
+}
+
+.apple-btn {
+  background: white;
+  color: black;
+}
+
+.rectangle {
+  margin-top: 80px;
+  background: #1c1c24;
+  border: 1px solid #333342;
+  border-radius: 28px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 900px;
+}
+
+.playlist-card {
+  background: #292936;
+  border-radius: 20px;
+  padding: 24px;
+  flex: 1;
+}
+
+.playlist-card span {
+  font-weight: 800;
+}
+
+.playlist-card p {
+  color: #bcbccc;
+}
+
+.arrow {
+  font-size: 42px;
+}
+
+.rectangle-2 {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -120px;
+  top: 160px;
+  background: linear-gradient(135deg, #1db954, #fa57c1);
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+}
