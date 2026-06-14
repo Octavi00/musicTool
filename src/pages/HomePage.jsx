@@ -14,35 +14,26 @@ function App() {
       </nav>
 
       <section className="hero-card">
-        <p className="text-wrapper">Welcome to your favorite tools</p>
+        <p className="text-wrapper">Welcome to your favorite Playlist tools</p>
 
         <p className="hero-subtext">
-          Switching music service? Try out the playlist transfer tool
+          Can't decide which playlist to listen to? Try out the playlist merging tool
         </p>
 
         <div className="button-row">
           <Link to="/ConnectSpotify">
             <button className="spotify-btn">Connect Spotify</button>
           </Link>
-
-          <Link to="/ConnectApple">
-            <button className="apple-btn">Connect Apple Music</button>
-          </Link>
         </div>
       </section>
 
-      <div className="transfer-preview">
+      <div className="tool-preview">
         <div className="playlist-card spotify-card">
-          <span>Spotify Playlist</span>
-          <p>Liked Songs → Road Trip → Gym Mix</p>
+          <span>Playlist Merger</span>
+          <p>Road Trip + Gym Mix → Flow State</p>
         </div>
 
-        <div className="arrow">⇄</div>
-
-        <div className="playlist-card apple-card">
-          <span>Apple Music</span>
-          <p>Matched songs ready to transfer</p>
-        </div>
+        <div className="arrow">+</div>
       </div>
 
       <div className="background-glow" />

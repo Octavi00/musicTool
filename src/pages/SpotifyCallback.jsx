@@ -16,9 +16,9 @@ function SpotifyCallback() {
       // Store the authorization code in localStorage for later use
       localStorage.setItem("spotify_connected", "true");
 
-      // Redirect to Apple Music connection page after a short delay
+      // Redirect to HomePage after a short delay to show the success message
       setTimeout(() => {
-        navigate("/ConnectApple");
+        navigate("/");
         }, 2000);
     }
     
@@ -27,7 +27,7 @@ function SpotifyCallback() {
   return (
     <div className="dashboard">
       <h1>Spotify connected</h1>
-      <p>Redirecting to Apple Music...</p>
+      <p>Redirecting to Tools...</p>
     </div>
   );
 }

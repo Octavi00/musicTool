@@ -40,13 +40,12 @@ function ConnectSpotify() {
         <div className="connect-card">
           <div className="spotify-icon">♬</div>
 
-          <p className="connect-label">Step 1 of 2</p>
+          <p className="connect-label">Step 1</p>
 
           <h1>Connect your Spotify account</h1>
 
           <p className="connect-description">
-            Sign in with Spotify so Switchify can read your playlists and prepare
-            them for transfer to Apple Music.
+            Sign in with Spotify to read your playlists.
           </p>
 
           <button className="spotify-connect-btn" onClick={loginWithSpotify}>
@@ -54,7 +53,7 @@ function ConnectSpotify() {
           </button>
 
           <p className="connect-note">
-            We only request playlist access needed for transferring your music.
+            We only request playlist access needed for meeting your music needs.
           </p>
         </div>
 
@@ -68,12 +67,12 @@ function ConnectSpotify() {
 
           <div className="step-row">
             <span>2</span>
-            <p>Select a playlist to transfer</p>
+            <p>Select a tool</p>
           </div>
 
           <div className="step-row">
             <span>3</span>
-            <p>Match songs with Apple Music</p>
+            <p>Spice up your playlists</p>
           </div>
         </div>
       </section>
@@ -108,6 +107,9 @@ async function loginWithSpotify() {
   window.location.href = `https://accounts.spotify.com/authorize?${params.toString()}`;
 }
 
+
+
+
 function generateRandomString(length) {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
@@ -124,7 +126,6 @@ function generateRandomString(length) {
 function generateCodeVerifier(length) {
   return generateRandomString(length);
 }
-
 // Function to generate a code challenge for PKCE authentication
 async function generateCodeChallenge(codeVerifier) {
   // Create a SHA-256 hash of the code verifier and encode it in base64 URL format

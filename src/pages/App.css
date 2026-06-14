@@ -76,11 +76,6 @@ a {
   color: black;
 }
 
-.apple-btn {
-  background: white;
-  color: black;
-}
-
 .home-btn {
   background: rgb(13, 110, 128);
   color: black;
@@ -89,8 +84,8 @@ a {
 
 
 
-/* HOME PAGE - PLAYLIST TRANSFER PREVIEW */
-.transfer-preview {
+/* HOME PAGE - PLAYLIST Tool PREVIEW */
+.tool-preview {
   margin-top: 80px;
   background: #1c1c24;
   border: 1px solid #333342;
