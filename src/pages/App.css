@@ -174,12 +174,6 @@ a {
   margin-bottom: 32px;
 }
 
-.spotify-connect-btn {
-  width: 100%;
-  background: #1db954;
-  color: #101014;
-}
-
 .connect-note {
   color: #8f8fa3;
   font-size: 14px;
@@ -228,6 +222,30 @@ a {
   color: #cfcfd8;
   margin: 0;
 }
+
+
+
+
+
+/* TOOLS PAGE */
+.tools-btn {
+  background: rgb(13, 110, 128);
+  color: black;
+  font-weight: 700;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.merge-btn {
+  background: #1db954;
+  color: black;
+  font-weight: 700;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+
+
 
 
 

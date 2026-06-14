@@ -1,6 +1,7 @@
 // A simple React component to handle the Spotify callback and extract the authorization code from the URL
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./App.css";
 
 function SpotifyCallback() {
   const navigate = useNavigate();
@@ -16,9 +17,9 @@ function SpotifyCallback() {
       // Store the authorization code in localStorage for later use
       localStorage.setItem("spotify_connected", "true");
 
-      // Redirect to HomePage after a short delay to show the success message
+      // Redirect to ToolsPage after a short delay to show the success message
       setTimeout(() => {
-        navigate("/");
+        navigate("/ToolsPage");
         }, 2000);
     }
     

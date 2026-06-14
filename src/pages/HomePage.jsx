@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css"
 import { Link } from "react-router-dom";
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
         </p>
 
         <div className="button-row">
-          <Link to="/ConnectSpotify">
-            <button className="spotify-btn">Connect Spotify</button>
-          </Link>
+          <Link className="logo" to="/ToolsPage">
+            <button className="tools-btn">Jump Into Tools</button>
+        </Link>
         </div>
       </section>
 
